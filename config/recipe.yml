@@ -29,11 +29,32 @@ modules:
     repos:
       - https://copr.fedorainfracloud.org/coprs/solopasha/hyprland/repo/fedora-38/solopasha-hyprland-fedora-38.repo
     install:
+      # hyprland
       - hyprland
-      - xdg-desktop-portal-hyprland
-      - hyprpicker
-      - hyprshot
-      - sddm-wayland-generic
+      - hyprpaper # wallpaper util
+      - hyprpicker # color picker
+      - hyprshot # screenshot util
+      - xdg-desktop-portal-hyprland # desktop portal
+
+      # audio
+      - pipewire
+      - wireplumber
+
+      # terminal
+      - alacritty # terminal
+      - micro # tui editor better than nano
+      - zsh # shell
+
+      # qt
+      - qt5-qtwayland
+      - qt6-qtwayland
+
+      # other
+      - dunst # notification daemon
+      - polkit-kde
+      - sddm-wayland-generic # display manager
+      - waybar
+      - wofi
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
