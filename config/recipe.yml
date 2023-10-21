@@ -37,8 +37,13 @@ modules:
       - xdg-desktop-portal-hyprland # desktop portal
 
       # audio
+      - pavucontrol
       - pipewire
+      - playerctl
       - wireplumber
+
+      # bluetooth
+      - blueman
 
       # terminal
       - alacritty # terminal
@@ -53,17 +58,34 @@ modules:
       - procs
       - tldr
 
+      # network
+      - network-manager-applet
+      - NetworkManager-l2tp-gnome
+      - NetworkManager-libreswan-gnome
+      - NetworkManager-openconnect-gnome
+      - NetworkManager-openvpn-gnome
+      - NetworkManager-pptp-gnome
+      - NetworkManager-sstp-gnome
+      - NetworkManager-vpnc-gnome
+
       # qt
       - qt5-qtwayland
       - qt6-qtwayland
 
       # other
+      - bolt
       - dunst # notification daemon
+      - fprintd-pam
+      - gnome-keyring-pam
+      - lxqt-policykit
       - nautilus
-      - polkit-kde
+      - pinentry-gnome3
+      - plymouth-system-theme
       - rofi-wayland
       - sddm-wayland-generic # display manager
+      - system-config-printer
       - waybar
+      - wl-clipboard
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
