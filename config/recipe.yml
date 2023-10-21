@@ -44,6 +44,14 @@ modules:
       - alacritty # terminal
       - micro # tui editor better than nano
       - zsh # shell
+      
+      # modern cli tools https://github.com/ibraheemdev/modern-unix
+      - duf
+      - exa
+      - fd-find
+      - httpie
+      - procs
+      - tldr
 
       # qt
       - qt5-qtwayland
