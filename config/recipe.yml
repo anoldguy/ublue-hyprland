@@ -52,9 +52,9 @@ modules:
       # other
       - dunst # notification daemon
       - polkit-kde
+      - rofi-wayland
       - sddm-wayland-generic # display manager
       - waybar
-      - wofi
     remove:
       - firefox # default firefox removed in favor of flatpak
       - firefox-langpacks # langpacks needs to also be removed to prevent dependency problems
