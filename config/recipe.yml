@@ -51,6 +51,7 @@ modules:
 
       # other
       - dunst # notification daemon
+      - nautilus
       - polkit-kde
       - rofi-wayland
       - sddm-wayland-generic # display manager
