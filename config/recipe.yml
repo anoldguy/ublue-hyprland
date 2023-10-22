@@ -74,6 +74,7 @@ modules:
 
       # other
       - bolt
+      - brightnessctl
       - dunst # notification daemon
       - fprintd-pam
       - gnome-keyring-pam
