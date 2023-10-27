@@ -52,7 +52,7 @@ modules:
       
       # modern cli tools https://github.com/ibraheemdev/modern-unix
       - duf
-      - exa
+      - eza
       - fd-find
       - httpie
       - procs
