@@ -11,19 +11,14 @@ Additional software/patches:
 
 ## Install
 
-### On bare metal without anything preconfigured
+### 1. Install any `rpm-ostree`-based system
 
-1. download an ISO file from the [latest release](https://github.com/vfosnar/ublue-hyprland/releases/tag/auto-iso)
-2. flash it to your thumb drive
-3. install the OS
+- [Immutable Fedora with GNOME](https://fedoraproject.org/silverblue/)
+- [Immutable Fedora with KDE](https://fedoraproject.org/kinoite/)
 
-You can find many guides on the internet on how to flash an ISO
-- [https://learn.microsoft.com/en-us/linux/install](https://learn.microsoft.com/en-us/linux/install#create-a-bootable-usb-drive-to-install-bare-metal-linux)
-- https://www.wikihow.com/Install-Linux
+### 2. Rebase
 
-### From a `rpm-ostree`-based system
-
-If you are already running a `rpm-ostree`-based system, you can just rebase using
+Just run the following command in the terminal
 ```
 sudo rpm-ostree rebase ostree-image-signed:docker://ghcr.io/vfosnar/ublue-hyprland
 ```
